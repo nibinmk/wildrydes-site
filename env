@@ -1,0 +1,61 @@
+# See configuring.rst to learn about these settings.
+
+# Django secret key -- set this to an arbitrary string
+DJANGO_SECRET_KEY=eykbw0n+3quruci88w@nsh@-u#^ylhau!l1%%()2+2=0^3!)mv
+
+# Encryption key for secrets stored in the database.
+# Generate a key using cryptography.fernet.Fernet.generate_key()
+DB_ENCRYPTION_KEYS=ccvh1Q_S3VvvSp9U8CX4PA9fX0fzYBQ3qZEEVQYuWq4=
+
+# Allow multithreading on local setup
+OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+POSTGRES_USER=metaci
+POSTGRES_DB=metaci
+POSTGRES_PASSWORD=
+DATABASE_URL=postgres://metaci:password@postgres:5432/metaci
+
+# GitHub Settings
+# Needed to interact with GitHub
+# In order to log in with GitHub we need the following for a GitHub app:
+GITHUB_CLIENT_ID=Iv1.386909d89d947cb3
+GITHUB_CLIENT_SECRET=09301ce8b47459314df3da7dd65fdfe68193725d
+# It's also possible that CumulusCI tasks will need to call the GitHub API.
+# For that we need:
+# Option 1: Log in as a GitHub app
+# GITHUB_APP_ID=117764
+# GITHUB_APP_KEY=-----BEGIN RSA PRIVATE KEY-----\nMIIEpAIBAAKCAQEAyetWzYRKFpSiVaS9cEejF4PWgjpTXwtcGMstc4tNHQkGQBzV\ntyvqBmiAAAUavw46B6FOJOzc5ltTFE5pwx+2G3SNChFEM166mzH284olxgjPY+rw\nwOuWCFoiFfSB7/03mwjl0ZX7qiwp/K9btp36dreuowFCQDjVG/n2TbWDWD1mH6kc\nwnI6zjqIrVQ7RTS8xFbJ8Y2TVh0SlML1DRw4GNN91uVklPbUSjZKhIaVyFkTTKpo\n9Xv8/yzc2uzyzl39C+vXcN2OgFC4g1/Sx+Li7JaeiK03IwVEyyOVCcr6sFgIGSnR\n1cHJpLt2xubZEI9xnxAYvctoivVeJ5PtE+CoQQIDAQABAoIBAAk71uNdGlo//9B0\n0SjyTbYElGmuKyPcjCCiIfj3tNYQFJYX+3n96xzR6JCXqypzhxnUOZOctVlfccQq\n9dEzgQtuYAjG01yaB2STe1yVw7ZzrrA+DTZ1T44gORDR9qM37DQNyxyzhCe7D0x7
+5HDMdqi5K6ZOp23ya2R1INta4p/FUjrhQh3SUpKZ2dCfuwsOQxPjQRBr2q6vEghw\n+A8sNvRe2CcX1ksP0nKALDfVAN3E8jf376LNVQghcV0OviyV9MrbRZXrIWRgSliw\nYtVYTmiKDBBBmB6u7zulCXsexRf1FQcfm70FuPEn14cHZ2rTGr3axjxbXuai00Ps
+3Js4bXECgYEA59IT6535LBZiwXX+WrE7VZZqZesNXXiD/zNQ4YLLAQoP7sRUcHBs\nYjqUb+yxLlo8SlJRVmsIQUTnlNCHhywAyx3Ooix9vm9DCPYO8vNYGcYz/A8dLKcs\nR+J++4pLXleSgcqse9d9V7TGa+aOSwpT1UHZtRALmwbpIiVBSAQ3Y5UCgYEA3vrb\nEJdS13Vvs973Qv+pRNQI1tsddR1tR7LZecZB/+mfuUZUs1GL8InmIKLVbgbbcNVD\nUw3qDW8PxF4Y82wGzeu3haE/qzU2dEXtvnRZQ5F2JOIk+qhYnFYKlDBLOxP+leuw\n8M21zH3bMAtnH47xlvx5b3SNYjqyTADx/aImxv0CgYEA18PaMqUYNAap6DKwiS0I\ncsLLSQ0bpXH0OWVD1IFt/QumhK9LgFPDLTIk0n/U8bWfA/XWKr74Mfe2K/ZjDlbQ\nbjzSBHOwnbzlAcQzacFAsMyfue0/VD5MoqOXWPwA5lBP1moTXDjXOvjQ7cDrk8CL\nAqSFw1ap1qL5/oP6XNM/0nkCgYAZWdXsJfgyLNTdU10zTdPV0nGK0/CebxEMlMXq\n9WJtkQcqzlc05/GMEHGMhlbToo3yXxy/ZZaVnmnhfn1Bt6dyY/lChRmzAmLFh2nH\nPH0llHUlLlzb7qXcaF/dhzwWZGiObPR5/DlOHYT9Cl7YFK1c6Cl6RXsJjvjUcUsR\n9gyIlQKBgQDNUon1OmOgpSsef79eL5VDbL07+MgYxaMa5v6raXQNPnD04UmYqKgh\nritwv4MMxa14AYSeoLDcEKovqEdYM4hVSVI/ElTzrAuqGuFl8vbQz/cDYL1XZfce\nJxHZJNvj/vTy9co+MRoqRs+wuZ+cgfWrG0B/lSKNQ7pSfS0vG8qFnA==\n-----END RSA PRIVATE KEY-----
+# Option 2: Log in as a GitHub user
+# (Use a Personal Access Token instead of a password if 2FA is enabled)
+GITHUB_USERNAME=
+GITHUB_PASSWORD=
+
+# SFDX Settings
+# Needed to create Salesforce scratch orgs
+SFDX_CLIENT_ID=3MVG9G9pzCUSkzZvg37DglzfkSNbYLdmkTclL15Oj64nwEFV489Kn7XHvw0UfxsuG4toH_X0jSq31b.nVSa3r
+SFDX_HUB_KEY=-----BEGIN RSA PRIVATE KEY-----\nMIIEpQIBAAKCAQEAyCY+5dFHjQepNBGMYAwncoUEcaK9ckAuTuxzYkEz6SjmYrkS\nifjCOXElGOGCRe51VoazeLkhyPP+81/blsLEy+OCTsPiF6j65KZ7D680CPQUuJ0M\n9ugt7nWr7Frww701l8dwZS8DcsSl4XGaL0ARxmvwGQO1xnAmXHVhkf4rvvwpdSTx\nIVTXSTWe5htbeuSXuG1voJ+KIqj5KUo6R+A5UByiue1lzdluwnAXH2QBGdC02yrM\nuY2W8g9KdXb5gCoEyjtiuUTjMur1ABrwQI2LXUyCNYp2IBS5ivZBy+ruIozcxeg9\nY9AH0cfQQtzR8MAaL6nfkA8fbH55ANZ9gNRSqQIDAQABAoIBAQCKtY7DoP1QbO3D\nyyGY8vNnt23z/xACHR66zb3Na1i5jwHTi2WgvwiD3LkT/D1Xj8I8HBBHay5R4V9g\ndZ9uZT8T+nE1eyW2tgJi8km4/fg2+ElgBF+WwiQK7fwfSosvbHK25J4tUZ63LDe1\n/RAZDPMEq4tzGpIgm1rKmwLqtdbFfSzR534l+JQCgorTnivA6A98p9OL9yU1nyQQ\nVmGj/ps5yJkl19xfpBjRv9bL+thCqx0U8wEkuq5ubPSCiqre/d5l63jiGA4y32+c\nz1FaUwheRVQ+L3H3HgE7xD/yd/PReiIJ6y+CAC2JBI2Oxw/Sie+eSVzBG5ZZ3KNj\nAbf1AZWtAoGBAOKetvEG3pG2wYh3JzFjhYAzpgna/va3Oah+0JuEJJe6LPHecCEp\nnCPrtdCnP2Yh3e6t2oPydSHfy6oPpKH+jSV71y8G4wQl4ujVUd2wzfnVVP4OtDDP\nRnm+j0zsN7PuQhxz5MaKhPpVt75HRpHoW+YqPgVEEUk3c8/lbiCRlf6rAoGBAOIY\n/+GxPMlBRloXieqBrNaYMFz8ajTB7GwuH0TIaOYVL1CkM6ZYijFhRzGTf510+olw\nUCd070KI4sVY5AbLfCl6Fehf0g/1Wt29GH/15/Gc/gvBUNbYMq6wv0q8HMXqyEEV\ndGd4vNZjO+D46trYN+lThPw4QDyXCruBnK+d1uP7AoGBAJbhuUfMnQ9DMKOdQXj+\nm/n5aUkSh8LXxwnKNTX1yy9CA36d7OYHgC/iVdEwKWPklJC/K8fB+/6rtDvr4l8A\nzhTw2Ro0aZ1vZB5FORZzCxCV2tq0C4Cb4H5aQ6qhc4zWyymKd/1AaL0LqSSE7BVl\nMRqTcWusIB4xT2hRhvskM0u1AoGBAK7vbtQeAQ0qXxeHzOLP0H39JLZdaoNFY/rT\nuMfMVDVpQMGhOoFDUjEgtifqmrumbc53Qt00gYa2SNcujsefG4Mv/dFcijhkuxiD\nnXgsOHjd4kYQHc8NWjGFeYyGfbC4lpac1gLVDS7HeuX3UidfUetK/sLzdugqaVho\n0WWjt0ePAoGAEt4R/c+j62Du4IUoRkJ4k/g+XLWsYNw+F4iNDb7fwToz6o53XWmI\nWefPuWPQ+Fai2zL515PGiDoc51A/5EhQ6AFfWabvF0IZsKBPLcBnVzRDSp2vehdo\nvGpr+y++6NvJb0krvXqEQVdtNldAJy4uOLg3Zg4ToWHSz+kHdVJH8+o=\n-----END RSA PRIVATE KEY-----
+SFDX_HUB_USERNAME=nibinmk@rediffmail.com
+
+# AWS Settings
+# Only needed in order to record the results of Robot Framework tests to an Amazon S3 bucket.
+DJANGO_AWS_ACCESS_KEY_ID=
+DJANGO_AWS_SECRET_ACCESS_KEY=
+DJANGO_AWS_STORAGE_BUCKET_NAME=
+
+# Email settings
+# Only needed if you set up notifications
+DJANGO_SERVER_EMAIL=
+
+# Sentry
+# Only needed if you want to send errors to Sentry
+DJANGO_SENTRY_DSN=
+
+
+# GUS BUS
+# export METACI_RELEASE_WEBHOOK_URL=http://0.0.0.0:8001
+# export METACI_RELEASE_WEBHOOK_AUTH_KEY=123645
+# export METACI_START_STOP_WEBHOOK=True
+# Only needed when creating implementation steps find from GUS user id
+# export GUS_BUS_OWNER_ID="005B00000000000000"
